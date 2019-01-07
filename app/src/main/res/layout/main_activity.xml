@@ -16,7 +16,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/cold" />
+        app:srcCompat="@drawable/thermo_splash" />
 
     <TextView
         android:id="@+id/tvDescription"
@@ -28,7 +28,7 @@
         android:gravity="center"
         android:text="Did you know that you can determine the temperature outside by counting number of chirps a cricket makes?.  Just count the number of chirps one makes in 25 seconds and place that  number in the box below:"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText
@@ -78,5 +78,5 @@
         android:gravity="center"
         android:text="TextView"
         android:textColor="@android:color/black"
-        android:textStyle="bold|italic" />
+        android:textSize="18sp" />
 </LinearLayout>

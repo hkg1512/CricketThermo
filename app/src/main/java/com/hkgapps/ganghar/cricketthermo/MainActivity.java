@@ -1,7 +1,8 @@
 package com.hkgapps.ganghar.cricketthermo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -55,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
 
                     if (cbFahrenheit.isChecked()) {
                         dResult = iChirp + 40.0;
-                        strResult = "The calculated temperature (in Farenhiet): " + formatter.format(dResult) + " deg F";
+                        strResult = "Temperature (in Fahrenheit): <b><i>" + formatter.format(dResult) + " deg F</i></b>";
                     } else {
                         dResult = (iChirp / 3.0) + 4;
-                        strResult = "The calculated temperature (in Celsius): " + formatter.format(dResult) + " deg C";
+                        strResult = "Temperature (in Celsius): <b><i>" + formatter.format(dResult) + " deg C</i></b>";
                     }
 
-                    tvResult.setText(strResult);
+                    tvResult.setText(Html.fromHtml(strResult));
                     tvResult.setVisibility(View.VISIBLE);
                 }
             }
